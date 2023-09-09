@@ -1,0 +1,198 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Color de fondo */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+  background-color: #4285f4; /* Azul de Google */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos del menú de navegación */
+.navbar {
+  background-color: #4285f4; /* Azul de Google */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos del título */
+h1 {
+  text-align: center;
+  color: #4285f4; /* Azul de Google */
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+
+/* Estilos de la sección de "Firmar y Verificar" */
+.stamp-and-verify {
+  margin-top: 40px;
+}
+
+#steps{
+  margin-top: 50px !important;
+  padding: 50px !important;
+}
+
+
+.stamp-and-verify .stamp {
+  text-align: center;
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.stamp-and-verify-block-title {
+  text-align: center;
+  color: #4285f4; /* Azul de Google */
+}
+
+.stamp-and-verify-drop-zone {
+  border: 2px dashed #4285f4; /* Borde azul de Google */
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fff; /* Fondo blanco */
+}
+
+/* Estilos de resultados */
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff; /* Fondo blanco */
+}
+
+.result-description {
+  text-align: center;
+}
+
+/* Estilos de la sección de "Timestamp Info" */
+.intro {
+  margin-top: 40px;
+}
+
+.timestamp-of {
+  text-align: center;
+}
+
+.document-digest {
+  margin-bottom: 10px;
+}
+
+.sha {
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+/* Estilos de la leyenda */
+.types {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #fff; /* Fondo blanco */
+}
+
+.types-i {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.types-i.green {
+  background-color: #00b300; /* Verde */
+  color: #fff;
+}
+
+.types-i.grey {
+  background-color: #ccc; /* Gris */
+  color: #fff;
+}
+
+.types-i.gold {
+  background-color: #ffd700; /* Amarillo */
+  color: #fff;
+}
+
+.types-i.purple {
+  background-color: #800080; /* Morado */
+  color: #fff;
+}
+
+.types-i.blue {
+  background-color: #0000ff; /* Azul */
+  color: #fff;
+}
+
+/* Estilos de la tabla */
+.table {
+  margin-top: 40px;
+}
+
+/* Estilos de copia al portapapeles */
+.clipboard-copy {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4285f4; /* Azul de Google */
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.badge-copy {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #00b300; /* Verde */
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Estilos de enlaces */
+a {
+  color: #4285f4; /* Azul de Google */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
