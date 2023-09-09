@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="OpenTimestamps: a timestamping proof standard">
+  <meta property="og:description" content="OpenTimestamps aims to be a standard format for blockchain timestamping.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/images/og.jpg">
+  <title>Firma de Documentos en BlockChain</title>
+  <link rel="stylesheet" href="assets/stylesheets/application.css" media="screen" title="no title">
+  <link rel="stylesheet" href="assets/stylesheets/timestamp-of.css" media="screen" title="no title">
+<style>
+  .row {
+  display: flex;
+}
+
+.col1, .col2 {
+  flex: 1;
+}
+
+</style>
+
+</head>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-nav-open"></div>
+    </div>
+  </header>
+
+  
+
+  <h1 style="text-align: center; color: #4285f4;">Sistema de Verificación de Integridad de Archivos en <b>Blockchain</b></h1>
+
+  <!-- STAMP AND VERIFY -->
+  <section class="stamp-and-verify" id="stamp-and-verify">
+    <div class="container">
+      <div class="" id="stamp">
+        <div class="container">
+          <div class="row">
+            <div class="col1">
+              <h2 class="stamp-and-verify-block-title">Firmar Archivo</h2>
+              <div class="stamp-and-verify-drop-zone" id="stamped_holder">
+                  <span class="filename"></span>
+                  <span class="filesize"></span>
+                  <p class="hash">
+                      <br>Haz clic para subir el Archivo a Firmar. Admite todos los formatos posibles
+                  </p>
+              </div>
+              <input id="stamped_input" type="file" style="display:none">
+          </div>
+
+          <div class="col2">
+              <div id="steps">
+                <p><span class="number">1.</span> Arrastra el documento que deseas resguardar a esta área.</p>
+                <p><span class="number">2.</span> Se generará un archivo .ots que deberás utilizar para comprobar la inmutabilidad del archivo.</p>
+                <p><span class="number">3.</span> Ingresa a la sección de validación y verificación para corroborar el estado del documento.</p>
+              </div>
+          </div>
+            
+          </div>
+          
+        </div>
+
+        <div class="stamp-and-verify-result result result_stamp" id="result_stamp">
+          <p class="result-description">
+            El hash es calculado en tu navegador preservando su privacidad <br>
+            Se firmará automáticamente al arrastrar el archivo
+          </p>
+        </div>
+      </div>
+
+      <div class="statuses-container">
+        <div class="statuses statuses_hashing" id="statuses" style="display: none">
+          <a href="#" class="statuses-info" style="display: none"></a>
+          <p class="statuses-title">52%</p>
+          <p class="statuses-description">
+            Hashing
+          </p>
+        </div>
+      </div>
+
+      <br>
+    </div>
+  </section>
+
+  <!-- TIMESTAMP INFO -->
+  <section class="intro" id="info" style="display:none">
+    <h2 class="timestamp-of">
+      Firma en Blockchain de la transacción
+      <span id="title_digest"></span>
+    </h2>
+    <p class="document-digest">Documento Firmado (<span id="type"></span>):</p>
+    <p class="sha" id="digest"></p>
+  </section>
+  
+  
+
+  <div class="clipboard-copy" style="display: none">
+    <div class="badge-copy" >
+      Copied to Clipboard: <span class="hash"></span>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <script src="assets/javascripts/application.js"></script>
+  <script src="assets/javascripts/vendor/moment.min.js"></script>
+  <script src="assets/javascripts/vendor/moment-timezone-with-data-2012-2022.min.js"></script>
+  <!-- OpenTimestamps JavaScript (https://opentimestamps.org or local one) -->
+  <script src="assets/javascripts/vendor/opentimestamps.min.js"></script>
+  <!-- script src="../javascript-opentimestamps/dist/opentimestamps.js"></script -->
+  <script src="assets/javascripts/crypto-js/crypto-js.js"></script>
+
+  <script src="assets/javascripts/functions.js"></script>
+  <script src="assets/javascripts/info.js"></script>
+ 
+
+
+
+
+</body>
+
+</html>
